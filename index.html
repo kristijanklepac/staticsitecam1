@@ -5,21 +5,34 @@
   
     <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
     <!-- <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script> -->
-    <style></style>
+    <style>
+    html, body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+   }
+    </style>
   </head>
   
   <body>
+
+    <main>
+        
     <video-js
     id="vid1"
     controls
     muted
     preload="auto"
-    width="800"
-    height="450">
+    poster="solariskamp.jpg"
+    width="1200"
+    height="676" class="video-js vjs-default-skin vjs-big-play-centered">
     <source src="https://stream1.envoguebeachclub.com/index.m3u8" type="application/x-mpegURL">
     <!--<track kind="captions" src="../bad-captions.vtt" srclang="en" label="English">-->
     <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a></p>
   </video-js>
+      </main>
+
 
  
   
